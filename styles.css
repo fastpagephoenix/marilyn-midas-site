@@ -1,1 +1,41 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #120b0b;
+  color: #f7eadc;
+}
 
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #d4af37;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
