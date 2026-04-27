@@ -6,10 +6,12 @@ body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   background:
-    radial-gradient(circle at top, rgba(193,18,31,0.22), transparent 35%),
+    radial-gradient(circle at top, rgba(193,18,31,0.25), transparent 35%),
     linear-gradient(180deg, #070404 0%, #120606 60%, #070404 100%);
   color: #f7eadc;
 }
+
+/* HEADER */
 
 header {
   min-height: 85vh;
@@ -51,6 +53,8 @@ h1 {
   box-shadow: 0 25px 80px rgba(193,18,31,0.35);
 }
 
+/* SECTIONS */
+
 section {
   padding: 75px 20px;
   max-width: 950px;
@@ -69,6 +73,8 @@ p {
   line-height: 1.7;
   color: #f0d8cc;
 }
+
+/* CONNECT */
 
 .connect {
   border-top: 1px solid rgba(212,175,55,0.2);
@@ -102,6 +108,8 @@ a {
   color: #fff1ec;
 }
 
+/* CTA */
+
 .cta {
   background:
     linear-gradient(rgba(7,4,4,0.78), rgba(7,4,4,0.88)),
@@ -121,6 +129,8 @@ a {
   background: #d4af37;
   color: #070404;
 }
+
+/* FOOTER */
 
 footer {
   text-align: center;
