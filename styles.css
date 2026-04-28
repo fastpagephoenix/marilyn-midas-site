@@ -422,18 +422,26 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
-  font-size: clamp(3rem, 6vw, 5.5rem); /* slightly smaller so it fits */
-  line-height: 0.9;
-  letter-spacing: 4px;
+  font-size: clamp(2.8rem, 5.5vw, 5rem); /* smaller max size */
+  line-height: 0.95;
+  letter-spacing: 3px;
 
   margin: 20px auto 25px;
   text-align: center;
   width: 100%;
-  max-width: 100%;
+}
 
-  overflow: hidden; /* prevents spill */
+/* THIS IS THE KEY FIX */
+.age-title span {
+  display: block;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* Make the box slightly wider so it breathes */
+.age-box {
+  max-width: 860px; /* was smaller before */
 }
 
 /* Force clean line breaks */
