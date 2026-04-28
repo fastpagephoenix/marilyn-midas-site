@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Marilyn Midas</title>
+  <link rel="stylesheet" href="styles.css?v=50"/>
+
+  <script>
+    if (localStorage.getItem("marilynMidasAgeVerified") !== "true") {
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="logo">Marilyn Midas</div>
+
+  <div class="nav-links">
+    <a href="home.html#about">About</a>
+    <a href="home.html#experience">Experience</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="home.html#connect">Connect</a>
+  </div>
+</nav>
+
+<header class="gallery-hero">
+  <p class="eyebrow">Marilyn Midas Official</p>
+  <h1>Gallery</h1>
+  <p class="subtitle">Curated Moments • Golden Presence</p>
+</header>
+
+<section class="full-gallery">
+
+  <div class="gallery-masonry">
+    <img src="hero-1.JPG" alt="Marilyn Midas gallery image">
+    <img src="about.JPG" alt="Marilyn Midas gallery image">
+    <img src="gallery-1.jpg" alt="Marilyn Midas gallery image">
+
+    <!-- Add more images below later -->
+    <!-- Example:
+    <img src="gallery-2.jpg" alt="Marilyn Midas gallery image">
+    <img src="gallery-3.jpg" alt="Marilyn Midas gallery image">
+    <img src="gallery-4.jpg" alt="Marilyn Midas gallery image">
+    -->
+  </div>
+
+</section>
+
+<section class="section center">
+  <p class="eyebrow">Exclusive Access</p>
+  <h2>Request the Marilyn Midas experience.</h2>
+  <p>Private bookings, collaborations, and curated experiences.</p>
+  <a href="home.html#connect" class="button">Connect</a>
+</section>
+
+<footer>
+  <p>© 2026 Marilyn Midas. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
