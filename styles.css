@@ -266,3 +266,53 @@ footer p {
     height: 460px;
   }
 }
+.hidden {
+  display: none;
+}
+
+.age-gate {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(193,166,97,0.22), transparent 35%),
+    linear-gradient(180deg, #17362a 0%, #0d1f18 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.age-box {
+  max-width: 560px;
+  background: rgba(255, 250, 241, 0.96);
+  border: 1px solid rgba(193, 166, 97, 0.7);
+  padding: 48px 34px;
+  text-align: center;
+  box-shadow: 0 30px 90px rgba(0,0,0,0.35);
+}
+
+.age-box h1 {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+}
+
+.age-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.age-buttons button {
+  padding: 15px 28px;
+  border: 1px solid #c1a661;
+  background: #17362a;
+  color: #f4efe6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.age-buttons .secondary-btn {
+  background: transparent;
+  color: #17362a;
+}
