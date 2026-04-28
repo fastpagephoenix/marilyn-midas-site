@@ -496,3 +496,36 @@ footer p {
   transform: scale(1.015);
   transition: 0.3s ease;
 }
+
+.gallery-masonry img {
+  cursor: pointer;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(6, 18, 13, 0.92);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.lightbox img {
+  max-width: 92vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border: 1px solid rgba(193, 166, 97, 0.7);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.55);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 22px;
+  right: 34px;
+  color: #f4efe6;
+  font-size: 44px;
+  cursor: pointer;
+  z-index: 10000;
+}
