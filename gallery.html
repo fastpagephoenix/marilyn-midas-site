@@ -60,5 +60,28 @@
   <p>© 2026 Marilyn Midas. All rights reserved.</p>
 </footer>
 
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="Expanded gallery image">
+</div>
+
+<script>
+  const galleryImages = document.querySelectorAll(".gallery-masonry img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  galleryImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = "flex";
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
+  }
+</script>
+  
 </body>
 </html>
