@@ -379,3 +379,23 @@ footer p {
   display: block;
   white-space: nowrap;
 }
+
+.age-box h1.age-title {
+  font-size: clamp(3.2rem, 7vw, 6.2rem);
+  line-height: 0.9;
+  letter-spacing: 4px;
+  margin: 22px auto 28px;
+  text-align: center;
+  max-width: 100%;
+  color: #07382f;
+  text-shadow: none;
+}
+
+.age-title span {
+  display: block;
+  white-space: nowrap;
+}
+
+.age-box {
+  overflow: hidden;
+}
