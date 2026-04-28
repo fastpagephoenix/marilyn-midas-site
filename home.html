@@ -4,11 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marilyn Midas | Official</title>
+  <link rel="stylesheet" href="styles.css?v=40"/>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css?v=30"/>
-
-  <!-- AGE GATE PROTECTION -->
   <script>
     if (localStorage.getItem("marilynMidasAgeVerified") !== "true") {
       window.location.href = "index.html";
@@ -18,10 +15,8 @@
 
 <body>
 
-<!-- NAV -->
 <nav class="nav">
   <div class="logo">Marilyn Midas</div>
-
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
@@ -30,53 +25,37 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
   <div class="hero-inner">
     <p class="eyebrow">Modern Luxury • Golden Presence</p>
-
     <h1>Marilyn Midas</h1>
+    <p class="subtitle">Elegant. Magnetic. Timeless.</p>
 
-    <p class="subtitle">
-      Elegant. Magnetic. Timeless.
-    </p>
-
-    <!-- HERO IMAGE (replace later) -->
     <div class="hero-frame">
-      <div class="placeholder">
-        <span>Hero Image</span>
-      </div>
+      <img src="hero.jpg" alt="Marilyn Midas" class="hero-photo">
     </div>
 
-    <!-- CTA -->
     <div class="hero-cta">
       <a href="#" class="button">Request Booking</a>
     </div>
   </div>
 </header>
 
-<!-- ABOUT -->
 <section id="about" class="section split">
   <div>
     <p class="eyebrow">The Standard</p>
     <h2>Soft glamour with a Midas touch.</h2>
-  </div>
-
-  <div>
     <p>
       Marilyn Midas blends timeless beauty with quiet luxury.
-      The experience is polished, intimate, and elevated —
-      built on confidence, presence, and refined energy.
+      The experience is polished, intimate, and elevated.
     </p>
+  </div>
 
-    <p>
-      Every interaction is intentional, every detail curated,
-      and every moment designed to feel exclusive.
-    </p>
+  <div class="about-image-wrap">
+    <img src="about.jpg" alt="Marilyn Midas portrait" class="about-photo">
   </div>
 </section>
 
-<!-- EXPERIENCE CARDS -->
 <section id="experience" class="cards">
   <div class="card">
     <h3>Velvet Green</h3>
@@ -94,31 +73,22 @@
   </div>
 </section>
 
-<!-- GALLERY PLACEHOLDER -->
 <section id="gallery" class="section center">
   <p class="eyebrow">Gallery</p>
   <h2>Moments</h2>
 
-  <div class="gallery-grid">
-    <div class="gallery-placeholder"></div>
-    <div class="gallery-placeholder"></div>
-    <div class="gallery-placeholder"></div>
+  <div class="wide-gallery">
+    <img src="gallery1.jpg" alt="Marilyn Midas gallery image">
   </div>
 </section>
 
-<!-- BOOKING CTA -->
 <section class="section center">
   <p class="eyebrow">Exclusive Access</p>
   <h2>Enter the Marilyn Midas experience.</h2>
-
-  <p>
-    Request private bookings, collaborations, and curated experiences.
-  </p>
-
+  <p>Request private bookings, collaborations, and curated experiences.</p>
   <a href="#" class="button">Request Booking</a>
 </section>
 
-<!-- CONNECT -->
 <section id="connect" class="connect">
   <p class="eyebrow">Connect</p>
   <h2>Follow Marilyn</h2>
@@ -130,7 +100,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 Marilyn Midas. All rights reserved.</p>
 </footer>
