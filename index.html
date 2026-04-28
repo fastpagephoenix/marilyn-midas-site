@@ -3,131 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marilyn Midas | Official</title>
-  <link rel="stylesheet" href="styles.css?v=11"/>
+  <title>Age Verification | Marilyn Midas</title>
+  <link rel="stylesheet" href="styles.css?v=20"/>
 </head>
 
-<body>
+<body class="age-page">
 
-<div id="ageGate" class="age-gate">
-  <div class="age-box">
-    <p class="eyebrow">Marilyn Midas Official</p>
-    <h1>Age Verification</h1>
-    <p>
-      This website is intended for adults 18 years of age or older.
-      By entering, you confirm that you are at least 18.
-    </p>
+  <main class="age-gate">
+    <div class="age-box">
+      <p class="eyebrow">Marilyn Midas Official</p>
+      <h1>Age Verification</h1>
 
-    <div class="age-buttons">
-      <button onclick="enterSite()">I Am 18+</button>
-      <button onclick="leaveSite()" class="secondary-btn">Exit</button>
-    </div>
-  </div>
-</div>
+      <p>
+        This website is intended for adults 18 years of age or older.
+        By entering, you confirm that you are at least 18.
+      </p>
 
-<div id="siteContent" class="hidden">
-
-<nav class="nav">
-  <div class="logo">Marilyn Midas</div>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#access">Access</a>
-    <a href="#connect">Connect</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">Modern Luxury • Golden Presence</p>
-    <h1>Marilyn Midas</h1>
-    <p class="subtitle">Elegant. Magnetic. Timeless.</p>
-
-    <div class="hero-frame">
-      <div class="placeholder">
-        <span>Hero Image Placeholder</span>
+      <div class="age-buttons">
+        <button onclick="enterSite()">I Am 18+</button>
+        <button onclick="leaveSite()" class="secondary-btn">Exit</button>
       </div>
     </div>
-  </div>
-</header>
+  </main>
 
-<section id="about" class="section split">
-  <div>
-    <p class="eyebrow">The Standard</p>
-    <h2>Soft glamour with a Midas touch.</h2>
-  </div>
-
-  <div>
-    <p>
-      Marilyn Midas blends timeless beauty, quiet luxury, warm elegance,
-      and confident femininity. The brand is polished, intimate, upscale,
-      and unforgettable.
-    </p>
-  </div>
-</section>
-
-<section class="cards">
-  <div class="card">
-    <h3>Velvet Green</h3>
-    <p>Deep, rich, calm, luxurious, and refined.</p>
-  </div>
-
-  <div class="card">
-    <h3>Warm Gold</h3>
-    <p>The Midas signature — polished, premium, and iconic.</p>
-  </div>
-
-  <div class="card">
-    <h3>Marble Light</h3>
-    <p>Clean, elegant, modern, and high-end.</p>
-  </div>
-</section>
-
-<section id="access" class="section center">
-  <p class="eyebrow">Exclusive Access</p>
-  <h2>Enter the Marilyn Midas experience.</h2>
-  <p>
-    Follow official updates, premium content, private drops, and curated
-    moments from Marilyn Midas.
-  </p>
-
-  <a href="#" class="button">Request Access</a>
-</section>
-
-<section id="connect" class="connect">
-  <p class="eyebrow">Connect</p>
-  <h2>Follow Marilyn</h2>
-
-  <div class="links">
-    <a href="#">Instagram</a>
-    <a href="#">OnlyFans</a>
-    <a href="#">Twitter / X</a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Marilyn Midas. All rights reserved.</p>
-</footer>
-
-</div>
-
-<script>
-  function enterSite() {
-    localStorage.setItem("marilynMidasAgeVerified", "true");
-    document.getElementById("ageGate").style.display = "none";
-    document.getElementById("siteContent").classList.remove("hidden");
-  }
-
-  function leaveSite() {
-    window.location.href = "https://www.google.com";
-  }
-
-  window.onload = function () {
-    if (localStorage.getItem("marilynMidasAgeVerified") === "true") {
-      document.getElementById("ageGate").style.display = "none";
-      document.getElementById("siteContent").classList.remove("hidden");
+  <script>
+    function enterSite() {
+      localStorage.setItem("marilynMidasAgeVerified", "true");
+      window.location.href = "home.html";
     }
-  };
-</script>
+
+    function leaveSite() {
+      window.location.href = "https://www.google.com";
+    }
+  </script>
 
 </body>
 </html>
