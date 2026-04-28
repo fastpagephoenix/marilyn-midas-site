@@ -4,10 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marilyn Midas | Official</title>
-  <link rel="stylesheet" href="styles.css?v=10"/>
+  <link rel="stylesheet" href="styles.css?v=11"/>
 </head>
 
 <body>
+
+<div id="ageGate" class="age-gate">
+  <div class="age-box">
+    <p class="eyebrow">Marilyn Midas Official</p>
+    <h1>Age Verification</h1>
+    <p>
+      This website is intended for adults 18 years of age or older.
+      By entering, you confirm that you are at least 18.
+    </p>
+
+    <div class="age-buttons">
+      <button onclick="enterSite()">I Am 18+</button>
+      <button onclick="leaveSite()" class="secondary-btn">Exit</button>
+    </div>
+  </div>
+</div>
+
+<div id="siteContent" class="hidden">
 
 <nav class="nav">
   <div class="logo">Marilyn Midas</div>
@@ -22,9 +40,7 @@
   <div class="hero-inner">
     <p class="eyebrow">Modern Luxury • Golden Presence</p>
     <h1>Marilyn Midas</h1>
-    <p class="subtitle">
-      Elegant. Magnetic. Timeless.
-    </p>
+    <p class="subtitle">Elegant. Magnetic. Timeless.</p>
 
     <div class="hero-frame">
       <div class="placeholder">
@@ -44,8 +60,7 @@
     <p>
       Marilyn Midas blends timeless beauty, quiet luxury, warm elegance,
       and confident femininity. The brand is polished, intimate, upscale,
-      and unforgettable — like stepping into a private room made for gold,
-      velvet, marble, and soft light.
+      and unforgettable.
     </p>
   </div>
 </section>
@@ -75,7 +90,7 @@
     moments from Marilyn Midas.
   </p>
 
-  <a href="#" class="button">Enter Now</a>
+  <a href="#" class="button">Request Access</a>
 </section>
 
 <section id="connect" class="connect">
@@ -92,6 +107,27 @@
 <footer>
   <p>© 2026 Marilyn Midas. All rights reserved.</p>
 </footer>
+
+</div>
+
+<script>
+  function enterSite() {
+    localStorage.setItem("marilynMidasAgeVerified", "true");
+    document.getElementById("ageGate").style.display = "none";
+    document.getElementById("siteContent").classList.remove("hidden");
+  }
+
+  function leaveSite() {
+    window.location.href = "https://www.google.com";
+  }
+
+  window.onload = function () {
+    if (localStorage.getItem("marilynMidasAgeVerified") === "true") {
+      document.getElementById("ageGate").style.display = "none";
+      document.getElementById("siteContent").classList.remove("hidden");
+    }
+  };
+</script>
 
 </body>
 </html>
