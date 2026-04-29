@@ -867,3 +867,271 @@ footer {
 footer p {
   color: #f7f1e8;
 }
+/* LUXURY WHITE MARBLE / SHARP GOLD / RED ACCENT THEME */
+
+:root {
+  --marble-white: #fffaf2;
+  --marble-cream: #f3eadb;
+  --marble-shadow: #ded2bd;
+  --ink: #11100d;
+  --charcoal: #211b16;
+  --gold: #c79a2f;
+  --gold-bright: #e3bd63;
+  --gold-dark: #8a641d;
+  --red: #b00020;
+  --red-dark: #6f0014;
+}
+
+/* GLOBAL */
+
+body {
+  background:
+    linear-gradient(125deg, rgba(199,154,47,0.12) 0 1px, transparent 1px 120px),
+    linear-gradient(35deg, rgba(199,154,47,0.08) 0 1px, transparent 1px 160px),
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,0.95), transparent 28%),
+    linear-gradient(180deg, var(--marble-white), var(--marble-cream));
+  color: var(--ink);
+}
+
+/* NAV */
+
+.nav {
+  background: rgba(255, 250, 242, 0.96);
+  border-bottom: 2px solid var(--gold);
+  box-shadow: 0 10px 35px rgba(33,27,22,0.08);
+}
+
+.logo {
+  color: var(--ink);
+  font-weight: bold;
+}
+
+.nav-links {
+  color: var(--gold-dark);
+}
+
+.nav-links a:hover {
+  color: var(--red);
+}
+
+/* HERO + MAJOR HEADERS */
+
+.hero,
+.gallery-hero,
+.experience-detail {
+  background:
+    linear-gradient(rgba(255,250,242,0.88), rgba(255,250,242,0.94)),
+    linear-gradient(130deg, transparent 0 18%, rgba(199,154,47,0.18) 18.2%, transparent 18.8% 100%),
+    linear-gradient(35deg, transparent 0 58%, rgba(199,154,47,0.14) 58.2%, transparent 58.8% 100%),
+    var(--marble-white);
+  border-bottom: 2px solid rgba(199,154,47,0.45);
+}
+
+h1,
+.hero h1,
+.gallery-hero h1,
+.experience-detail h1 {
+  color: var(--ink);
+  text-shadow:
+    1px 1px 0 rgba(227,189,99,0.35),
+    0 18px 45px rgba(33,27,22,0.12);
+}
+
+h2 {
+  color: var(--ink);
+}
+
+.eyebrow,
+.rate,
+.experience-card span {
+  color: var(--gold-dark);
+  font-weight: bold;
+}
+
+.subtitle {
+  color: var(--red);
+  font-weight: bold;
+}
+
+/* IMAGE FRAMES */
+
+.hero-frame,
+.about-image-wrap,
+.wide-gallery {
+  background:
+    linear-gradient(145deg, #ffffff, var(--marble-cream));
+  border: 2px solid var(--gold);
+  box-shadow:
+    0 30px 90px rgba(33,27,22,0.18),
+    inset 0 0 0 1px rgba(255,255,255,0.8);
+}
+
+.hero-photo,
+.about-photo,
+.wide-gallery img,
+.gallery-masonry img {
+  border: 2px solid rgba(199,154,47,0.75);
+  box-shadow: 0 18px 45px rgba(33,27,22,0.16);
+}
+
+/* SECTIONS */
+
+.split,
+.center,
+.connect,
+.full-gallery,
+.gallery-section {
+  background:
+    linear-gradient(180deg, #fffdf8, #f6ecdd);
+}
+
+p {
+  color: #3d342b;
+}
+
+/* EXPERIENCE AREA */
+
+.experience,
+.cards,
+.related-experiences {
+  background:
+    linear-gradient(125deg, rgba(199,154,47,0.12) 0 1px, transparent 1px 135px),
+    linear-gradient(180deg, #fffaf2, #efe1cb);
+  border-top: 2px solid rgba(199,154,47,0.5);
+  border-bottom: 2px solid rgba(199,154,47,0.5);
+}
+
+.experience h2,
+.related-experiences h2 {
+  color: var(--ink);
+}
+
+.experience-card,
+.card {
+  background:
+    linear-gradient(180deg, #ffffff, #f7ecdb);
+  border: 2px solid var(--gold);
+  color: var(--ink);
+  box-shadow:
+    0 22px 65px rgba(33,27,22,0.16),
+    inset 0 0 0 1px rgba(255,255,255,0.85);
+}
+
+.experience-card:hover,
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--red);
+  box-shadow:
+    0 30px 90px rgba(33,27,22,0.22),
+    0 0 0 2px rgba(176,0,32,0.18);
+}
+
+.experience-card h3,
+.card h3,
+.policy-box h3,
+.booking-policy h3 {
+  color: var(--ink);
+}
+
+.experience-card p,
+.card p {
+  color: #44382e;
+}
+
+/* BUTTONS */
+
+.button,
+.links a,
+.age-buttons button {
+  background: var(--ink);
+  color: var(--marble-white);
+  border: 2px solid var(--gold);
+  box-shadow: 0 10px 25px rgba(33,27,22,0.16);
+}
+
+.button:hover,
+.links a:hover,
+.age-buttons button:hover {
+  background: var(--red);
+  color: #fff;
+  border-color: var(--red);
+}
+
+/* RELATED LINKS */
+
+.related-grid a {
+  background: #ffffff;
+  color: var(--ink);
+  border: 2px solid var(--gold);
+}
+
+.related-grid a:hover {
+  background: var(--red);
+  color: #ffffff;
+  border-color: var(--red);
+}
+
+/* POLICY BOXES */
+
+.policy-box,
+.booking-policy {
+  background:
+    linear-gradient(180deg, #ffffff, #f7ecdb);
+  border: 2px solid rgba(199,154,47,0.75);
+  box-shadow: 0 18px 45px rgba(33,27,22,0.12);
+}
+
+/* GALLERY */
+
+.gallery-masonry img:hover {
+  border-color: var(--red);
+  box-shadow:
+    0 28px 75px rgba(33,27,22,0.24),
+    0 0 0 2px rgba(176,0,32,0.2);
+}
+
+/* LIGHTBOX */
+
+.lightbox {
+  background: rgba(17,16,13,0.94);
+}
+
+/* AGE GATE */
+
+.age-page,
+.age-gate {
+  background:
+    linear-gradient(125deg, rgba(199,154,47,0.16) 0 1px, transparent 1px 130px),
+    radial-gradient(circle at top, rgba(227,189,99,0.25), transparent 35%),
+    linear-gradient(180deg, #fffaf2, #efe1cb);
+}
+
+.age-box {
+  background:
+    linear-gradient(180deg, #fffdf8, #f5ead8);
+  border: 2px solid var(--gold);
+  box-shadow:
+    0 34px 95px rgba(33,27,22,0.22),
+    inset 0 0 0 1px rgba(255,255,255,0.85);
+}
+
+.age-box h1,
+.age-box h1.age-title {
+  color: var(--ink);
+}
+
+.age-buttons .secondary-btn {
+  background: transparent;
+  color: var(--ink);
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--ink);
+  border-top: 3px solid var(--gold);
+}
+
+footer p {
+  color: var(--marble-white);
+}
