@@ -649,3 +649,221 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+/* WHITE MARBLE / GOLD TRIM / RED ACCENT THEME OVERRIDE */
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(212, 175, 55, 0.12), transparent 28%),
+    linear-gradient(180deg, #fffdf8 0%, #f7f1e8 45%, #fffaf1 100%);
+  color: #1f1b16;
+}
+
+/* NAV */
+
+.nav {
+  background: rgba(255, 253, 248, 0.94);
+  border-bottom: 1px solid rgba(196, 155, 68, 0.35);
+}
+
+.logo {
+  color: #1f1b16;
+}
+
+.nav-links {
+  color: #8b6f2f;
+}
+
+.nav-links a:hover {
+  color: #b11226;
+}
+
+/* HERO */
+
+.hero,
+.gallery-hero,
+.experience-detail {
+  background:
+    linear-gradient(rgba(255, 253, 248, 0.88), rgba(255, 253, 248, 0.94)),
+    repeating-linear-gradient(
+      135deg,
+      rgba(196, 155, 68, 0.08) 0px,
+      rgba(196, 155, 68, 0.08) 1px,
+      transparent 1px,
+      transparent 120px
+    ),
+    #fffdf8;
+}
+
+h1,
+.hero h1,
+.gallery-hero h1,
+.experience-detail h1 {
+  color: #1f1b16;
+  text-shadow: none;
+}
+
+h2 {
+  color: #1f1b16;
+}
+
+.eyebrow,
+.rate,
+.experience-card span {
+  color: #b8892f;
+}
+
+.subtitle {
+  color: #b11226;
+}
+
+/* IMAGE FRAMES */
+
+.hero-frame,
+.about-image-wrap,
+.wide-gallery {
+  border: 1px solid rgba(196, 155, 68, 0.6);
+  background: linear-gradient(145deg, #ffffff, #f7f1e8);
+  box-shadow: 0 28px 80px rgba(75, 55, 25, 0.16);
+}
+
+.hero-photo,
+.about-photo,
+.wide-gallery img,
+.gallery-masonry img {
+  border: 1px solid rgba(196, 155, 68, 0.5);
+}
+
+/* SECTIONS */
+
+.split,
+.center,
+.connect,
+.full-gallery,
+.gallery-section {
+  background: #fffdf8;
+}
+
+p {
+  color: #4a4035;
+}
+
+/* EXPERIENCE CARDS */
+
+.experience,
+.cards,
+.related-experiences {
+  background:
+    linear-gradient(180deg, #fffdf8 0%, #f4eadb 100%);
+}
+
+.experience h2,
+.related-experiences h2 {
+  color: #1f1b16;
+}
+
+.experience-card,
+.card {
+  background: linear-gradient(180deg, #ffffff, #f8efe3);
+  border: 1px solid rgba(196, 155, 68, 0.62);
+  color: #1f1b16;
+  box-shadow: 0 24px 70px rgba(75, 55, 25, 0.16);
+}
+
+.experience-card:hover,
+.card:hover {
+  background: #fffaf1;
+  border-color: #b11226;
+}
+
+.experience-card h3,
+.card h3,
+.policy-box h3,
+.booking-policy h3 {
+  color: #1f1b16;
+}
+
+.experience-card p,
+.card p {
+  color: #4a4035;
+}
+
+/* BUTTONS */
+
+.button,
+.links a,
+.age-buttons button {
+  background: #1f1b16;
+  color: #fffdf8;
+  border: 1px solid #c49b44;
+}
+
+.button:hover,
+.links a:hover,
+.age-buttons button:hover {
+  background: #b11226;
+  color: #fffdf8;
+  border-color: #b11226;
+}
+
+/* RELATED LINKS */
+
+.related-grid a {
+  background: #ffffff;
+  color: #1f1b16;
+  border: 1px solid rgba(196, 155, 68, 0.65);
+}
+
+.related-grid a:hover {
+  background: #b11226;
+  color: #fffdf8;
+}
+
+/* POLICY BOXES */
+
+.policy-box,
+.booking-policy {
+  background: #ffffff;
+  border: 1px solid rgba(196, 155, 68, 0.55);
+}
+
+/* GALLERY LIGHTBOX */
+
+.lightbox {
+  background: rgba(31, 27, 22, 0.92);
+}
+
+/* AGE GATE */
+
+.age-page,
+.age-gate {
+  background:
+    radial-gradient(circle at top, rgba(196, 155, 68, 0.22), transparent 35%),
+    linear-gradient(180deg, #fffdf8 0%, #f4eadb 100%);
+}
+
+.age-box {
+  background: rgba(255, 253, 248, 0.96);
+  border: 1px solid rgba(196, 155, 68, 0.75);
+  box-shadow: 0 30px 90px rgba(75, 55, 25, 0.22);
+}
+
+.age-box h1,
+.age-box h1.age-title {
+  color: #1f1b16;
+}
+
+.age-buttons .secondary-btn {
+  background: transparent;
+  color: #1f1b16;
+}
+
+/* FOOTER */
+
+footer {
+  background: #1f1b16;
+  border-top: 1px solid rgba(196, 155, 68, 0.45);
+}
+
+footer p {
+  color: #f7f1e8;
+}
