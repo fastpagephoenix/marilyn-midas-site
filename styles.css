@@ -1230,3 +1230,18 @@ footer p {
     font-size: 0.76rem;
   }
 }
+.sticky-book {
+  right: 24px;
+  bottom: 22px;
+  max-width: 360px;
+}
+
+.sticky-book-note {
+  font-size: 0.65rem;
+  padding: 8px 12px;
+}
+
+.sticky-book-btn {
+  padding: 13px 22px;
+  font-size: 0.76rem;
+}
