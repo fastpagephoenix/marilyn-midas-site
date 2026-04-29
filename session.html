@@ -12,26 +12,6 @@
     }
   </script>
 </head>
-
-  <div class="sticky-book" id="stickyBook">
-  <div class="sticky-book-note">Private requests reviewed individually</div>
-
-  <a href="https://forms.gle/Ry71Y9j8W1fxCWEQ6" target="_blank" class="sticky-book-btn">
-    Request Booking
-  </a>
-</div>
-
-<script>
-  const stickyBook = document.getElementById("stickyBook");
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 450) {
-      stickyBook.classList.add("show");
-    } else {
-      stickyBook.classList.remove("show");
-    }
-  });
-</script>
   
 <body>
 
@@ -106,6 +86,26 @@
 <footer>
   <p>© 2026 Marilyn Midas. All rights reserved.</p>
 </footer>
+
+<div class="sticky-book" id="stickyBook">
+  <div class="sticky-book-note">Private requests reviewed individually</div>
+
+  <a href="https://forms.gle/Ry71Y9j8W1fxCWEQ6" target="_blank" class="sticky-book-btn">
+    Request Booking
+  </a>
+</div>
+
+<script>
+  const stickyBook = document.getElementById("stickyBook");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 450) {
+      stickyBook.classList.add("show");
+    } else {
+      stickyBook.classList.remove("show");
+    }
+  });
+</script>
 
 </body>
 </html>
