@@ -1671,3 +1671,38 @@ footer p {
     padding: 34px 16px !important;
   }
 }
+/* GUARANTEED AGE GATE MOBILE FIX */
+
+@media (max-width: 768px) {
+  .age-title {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    overflow: visible !important;
+  }
+
+  .age-title span:first-child {
+    display: block !important;
+    font-size: 3.2rem !important;
+    line-height: 1 !important;
+    letter-spacing: 2px !important;
+  }
+
+  .age-title span:last-child {
+    display: block !important;
+    font-size: 2.05rem !important;
+    line-height: 1.05 !important;
+    letter-spacing: 1px !important;
+    white-space: nowrap !important;
+    transform: none !important;
+  }
+
+  .age-box {
+    width: 92vw !important;
+    max-width: 92vw !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    box-sizing: border-box !important;
+  }
+}
