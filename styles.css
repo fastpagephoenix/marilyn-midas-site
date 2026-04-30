@@ -1456,3 +1456,76 @@ footer p {
     font-size: 0.88rem;
   }
 }
+/* MOBILE FIXES */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav {
+    padding: 18px 22px;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  .hero h1,
+  .gallery-hero h1,
+  .experience-detail h1 {
+    font-size: clamp(3.2rem, 18vw, 5.5rem);
+    line-height: 0.95;
+    word-break: normal;
+  }
+
+  .experience-grid,
+  .cards,
+  .platform-grid {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+
+  .experience-card,
+  .card,
+  .platform-card,
+  .full-row-center {
+    width: 100%;
+    max-width: 100%;
+    grid-column: auto !important;
+  }
+
+  .age-box {
+    width: 92%;
+    padding: 48px 22px;
+    overflow: hidden;
+  }
+
+  .age-box h1,
+  .age-box h1.age-title {
+    font-size: clamp(3rem, 16vw, 4.8rem);
+    line-height: 0.95;
+    word-break: break-word;
+  }
+
+  .age-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .age-buttons button,
+  .age-buttons a {
+    width: 100%;
+  }
+}
