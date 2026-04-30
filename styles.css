@@ -1636,3 +1636,38 @@ footer p {
     box-sizing: border-box !important;
   }
 }
+/* FINAL FINAL FIX — NOTHING OVERFLOWS */
+
+@media (max-width: 768px) {
+  .age-title {
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+
+    font-size: clamp(2.2rem, 10vw, 3rem) !important;
+    line-height: 1 !important;
+    letter-spacing: 2px !important;
+
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+
+  .age-title span {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* THIS is the real fix */
+  .age-title span:last-child {
+    font-size: clamp(2.2rem, 10vw, 2.8rem) !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .age-box {
+    width: calc(100vw - 48px) !important;
+    max-width: calc(100vw - 48px) !important;
+    padding: 34px 16px !important;
+  }
+}
