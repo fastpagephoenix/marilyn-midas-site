@@ -1250,3 +1250,93 @@ footer p {
   justify-self: center;
   max-width: 400px;
 }
+/* LUXURY COLLAPSIBLE FAQ */
+
+.faq-section {
+  padding: 95px 7%;
+  background:
+    linear-gradient(125deg, rgba(199,154,47,0.10) 0 1px, transparent 1px 135px),
+    linear-gradient(180deg, #fffaf2, #f3eadb);
+  border-top: 2px solid rgba(199,154,47,0.45);
+  border-bottom: 2px solid rgba(199,154,47,0.45);
+  text-align: center;
+}
+
+.faq-section h2 {
+  color: #11100d;
+  margin-bottom: 42px;
+}
+
+.faq-wrap {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: linear-gradient(180deg, #ffffff, #f8efe3);
+  border: 1px solid rgba(199,154,47,0.75);
+  margin-bottom: 14px;
+  box-shadow: 0 18px 45px rgba(33,27,22,0.10);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 22px 26px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #11100d;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b00020;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+.faq-item p {
+  padding: 0 26px 24px;
+  margin: 0;
+  color: #3d342b;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.faq-item[open] {
+  border-color: #b00020;
+  box-shadow:
+    0 24px 65px rgba(33,27,22,0.14),
+    0 0 0 1px rgba(176,0,32,0.12);
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 70px 6%;
+  }
+
+  .faq-item summary {
+    padding: 20px 48px 20px 20px;
+    font-size: 0.86rem;
+  }
+
+  .faq-item p {
+    padding: 0 20px 22px;
+  }
+}
