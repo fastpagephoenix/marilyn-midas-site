@@ -1513,7 +1513,8 @@ footer p {
 
   .age-box h1,
   .age-box h1.age-title {
-    font-size: clamp(3rem, 16vw, 4.8rem);
+    font-size: clamp(2.6rem, 12vw, 4.2rem);
+    letter-spacing: -1px;
     line-height: 0.95;
     word-break: break-word;
   }
