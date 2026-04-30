@@ -1245,3 +1245,8 @@ footer p {
   padding: 13px 22px;
   font-size: 0.76rem;
 }
+.full-row-center {
+  grid-column: span 4;
+  justify-self: center;
+  max-width: 400px;
+}
