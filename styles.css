@@ -1340,3 +1340,119 @@ footer p {
     padding: 0 20px 22px;
   }
 }
+/* PRIVATE ACCESS PLATFORM SECTION */
+
+.private-access-section {
+  padding: 100px 7%;
+  text-align: center;
+  background:
+    linear-gradient(125deg, rgba(199,154,47,0.10) 0 1px, transparent 1px 135px),
+    linear-gradient(180deg, #fffaf2, #efe1cb);
+  border-top: 2px solid rgba(199,154,47,0.5);
+  border-bottom: 2px solid rgba(199,154,47,0.5);
+}
+
+.private-access-section h2 {
+  color: #11100d;
+  margin-bottom: 20px;
+}
+
+.private-access-intro {
+  max-width: 760px;
+  margin: 0 auto 45px;
+  color: #b00020;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.platform-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.platform-card {
+  min-height: 230px;
+  padding: 34px 24px;
+  background:
+    linear-gradient(180deg, #ffffff, #f8efe3);
+  border: 2px solid rgba(199,154,47,0.8);
+  text-decoration: none;
+  color: #11100d;
+  box-shadow:
+    0 22px 60px rgba(33,27,22,0.13),
+    inset 0 0 0 1px rgba(255,255,255,0.85);
+  transition: all 0.28s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.platform-card:hover {
+  transform: translateY(-7px);
+  border-color: #b00020;
+  box-shadow:
+    0 30px 85px rgba(33,27,22,0.2),
+    0 0 0 1px rgba(176,0,32,0.18);
+}
+
+.platform-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 22px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #c79a2f;
+  border-radius: 50%;
+  color: #b00020;
+  font-size: 1.25rem;
+  background: #fffaf2;
+  box-shadow: 0 10px 30px rgba(199,154,47,0.18);
+}
+
+.platform-card h3 {
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #11100d;
+}
+
+.platform-card p {
+  margin: 0;
+  color: #3d342b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.featured-platform {
+  grid-column: 2 / span 2;
+}
+
+@media (max-width: 1000px) {
+  .platform-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+
+  .featured-platform {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .private-access-section {
+    padding: 75px 6%;
+  }
+
+  .private-access-intro {
+    font-size: 0.88rem;
+  }
+}
