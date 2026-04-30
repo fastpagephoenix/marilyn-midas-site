@@ -1530,3 +1530,51 @@ footer p {
     width: 100%;
   }
 }
+/* AGE GATE MOBILE FIX */
+
+@media (max-width: 768px) {
+  .age-gate,
+  .age-page {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 40px 16px;
+    box-sizing: border-box;
+  }
+
+  .age-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 42px 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .age-box h1,
+  .age-title {
+    font-size: clamp(2.6rem, 13vw, 4rem) !important;
+    line-height: 0.95 !important;
+    letter-spacing: 1px;
+    max-width: 100%;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .age-box p {
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+
+  .age-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .age-buttons button,
+  .age-buttons a {
+    width: 100%;
+    max-width: 260px;
+  }
+}
